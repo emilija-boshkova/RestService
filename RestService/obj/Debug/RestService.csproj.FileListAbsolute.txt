@@ -1,0 +1,5 @@
+C:\Users\emilija\Desktop\RestService\RestService\bin\RestService.dll
+C:\Users\emilija\Desktop\RestService\RestService\bin\RestService.pdb
+C:\Users\emilija\Desktop\RestService\RestService\obj\Debug\RestService.csprojResolveAssemblyReference.cache
+C:\Users\emilija\Desktop\RestService\RestService\obj\Debug\RestService.dll
+C:\Users\emilija\Desktop\RestService\RestService\obj\Debug\RestService.pdb
