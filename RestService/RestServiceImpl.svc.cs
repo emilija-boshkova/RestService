@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -13,8 +14,8 @@ namespace RestService
     // NOTE: In order to launch WCF Test Client for testing this service, please select RestServiceImpl.svc or RestServiceImpl.svc.cs at the Solution Explorer and start debugging.
     public class RestServiceImpl : IRestServiceImpl
     {
-        string cString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=\"|DataDirectory|\\Database\\TVSeries.mdf\";Integrated Security=True;Connect Timeout=30";
-
+        //string cString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=\"|DataDirectory|\\Database\\TVSeries.mdf\";Integrated Security=True;Connect Timeout=30";
+        string cString = ConfigurationManager.AppSettings["SQLSERVER_CONNECTION_STRING"];
         public string JSONData(string id)
         {
             return "You requested product" + id;
